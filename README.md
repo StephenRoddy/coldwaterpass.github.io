@@ -4,7 +4,22 @@ It exploits the power of sound to re-embody the impersonal statistical data reve
 The piece is driven by a Csound algorithm that maps the data to vocal synthesis parameters defined by in Native Instruments Reaktor synthesis engine. Input data is rescaled and assigned to midi note, pan and CC data that is ported into Logic Pro X.
 GNP, Unemployment and Emigration Rate are mapped to create a background harmonic material while Deprivation rate and Drug Crime offenses create a type of foreground call and response pattern that is spatially distrusted with Drug Crime presented on the right and Deprivation rate on the left. All of this is underpinned by a rhythmic percussion pattern for which each hit indicates 60 suicides. Parameters such as vowel shape note length and formant shape are leveraged in the expression of the data through tension patterns.  
 
+## The Sonification and Visualisation
 
+A description of the sonification is provided here: 
+stephenroddy.github.io/index.html
+
+The visualisation is a work in progress and will be continually developed over the coming months.
+
+The sonification and most recent visualisation can be played in the browser here: 
+https://stephenroddy.github.io/index2.html
+
+
+Further sonifications are available on "The Human Cost", an elecotronc album consisting of sonifications and musifications of the Irish financial crash :
+
+https://open.spotify.com/album/2AekYfNWhQRer1TH2loHGF
+
+https://music.apple.com/us/album/the-human-cost/1278676607
 
 
 ## Credits
