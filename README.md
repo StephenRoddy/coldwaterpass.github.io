@@ -19,7 +19,7 @@ The sonification and most recent visualisation can be played in the browser here
 
 Further sonifications are available on "The Human Cost", an elecotronc album consisting of sonifications and musifications of the Irish financial crash :
 
-[Sotify](https://open.spotify.com/album/2AekYfNWhQRer1TH2loHGF)
+[Spotify](https://open.spotify.com/album/2AekYfNWhQRer1TH2loHGF)
 
 [Apple Music](https://music.apple.com/us/album/the-human-cost/1278676607)
 
