@@ -234,7 +234,7 @@ canvas {
 .toggle-btn {
 	background: transparent;
 	color: currentColor;
-	right: 2vmax;
+	right: 40vmax;
 }
 
 .toggle-btn:focus {
