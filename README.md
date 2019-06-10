@@ -6,12 +6,14 @@ GNP, Unemployment and Emigration Rate are mapped to create a background harmonic
 
 ## The Sonification and Visualisation
 
-A description of the sonification is provided here: 
-stephenroddy.github.io/index.html
+A description of the sonification is provided here:
+
+https://stephenroddy.github.io/index.html
 
 The visualisation is a work in progress and will be continually developed over the coming months.
 
 The sonification and most recent visualisation can be played in the browser here: 
+
 https://stephenroddy.github.io/index2.html
 
 
