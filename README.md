@@ -8,7 +8,7 @@ GNP, Unemployment and Emigration Rate are mapped to create a background harmonic
 
 A description of the sonification is provided here:
 
-https://stephenroddy.github.io/index.html
+https://stephenroddy.github.io/landing.html
 
 The visualisation is a work in progress and will be continually developed over the coming months.
 
