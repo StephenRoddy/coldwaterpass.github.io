@@ -189,12 +189,11 @@ canvas {
 
 
 	.hc-img {
-			right: 10px;
-			top: 10px;
-			width: 60vw;
-			position: absolute;
-			border: 1px solid;
-	}
+		margin: 30px;
+		width: 60vw;
+		position: absolute;
+		border: 1px solid;
+
 
 	.txt-note {
 		 visibility: hidden;
