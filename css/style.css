@@ -189,7 +189,7 @@ canvas {
 
 
 	.hc-img {
-		right: 10px;
+		left: 10px;
 		top: 10px;
 		width: calc(100% - 60px);
 }
