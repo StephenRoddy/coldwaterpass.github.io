@@ -12,17 +12,6 @@ function preload() {
 function setup() {
 
     createCanvas(windowWidth, windowHeight);
-    toggleBtn = createButton("Begin");
-    toggleBtn.addClass("toggle-btn");
-
-    toggleBtn.mousePressed(toggleAudio);
-    toggleBtn.mousePressed(toggleBtn.hide);
-    toggleBtn.mousePressed(fullscreen);
-
-    fft = new p5.FFT();
-
-    pieces = 32;
-    radius = windowHeight / 4;
 
     txtNotes = createDiv('<p>Coldwater Pass is a data-driven composition that explores some of the human dimensions of Ireland’s economic crash focusing specifically on the relationship between poverty, drug crime, emigration, and suicide.</br></br>It exploits the power of sound to re-embody the impersonal statistical data revealing aspects of the human realities underlying the cold hard facts. The piece uses a complex mapping strategy to map data that represents Deprivation Rate, Unemployment Rate, Emigration Rate, Drug Related Crime Rate and Annual Suicide Rate from 2007 to 2012 to musical features. This mapping manipulates patterns of tension and release in the musical material in order to communicate a sense of the human realities underlying the socioeconomic data. </br></br> The piece is driven by a Csound algorithm that maps the data to vocal synthesis parameters defined by in Native Instruments Reaktor synthesis engine. Input data is rescaled and assigned to midi note, pan and CC data that is ported into Logic Pro X.</br></br>GNP, Unemployment and Emigration Rate are mapped to create a background harmonic material while Deprivation rate and Drug Crime offenses create a type of foreground call and response pattern that is spatially distrusted with Drug Crime presented on the right and Deprivation rate on the left. All of this is underpinned by a rhythmic percussion pattern for which each hit indicates 60 suicides. Parameters such as vowel shape note length and formant shape are leveraged in the expression of the data through tension patterns.</p>');
     txtNotes.addClass("txt-note");
@@ -30,6 +19,21 @@ function setup() {
     hcCov = createDiv('<img src="lib/HumanCost.jpg"></img>')
     //hcCov =  createImg('lib/HumanCost.jpg'); / Divs are easier to style
     hcCov.addClass("hc-img");
+
+    toggleBtn = createButton("Begin");
+    toggleBtn.addClass("toggle-btn");
+
+    toggleBtn.mousePressed(toggleAudio);
+    toggleBtn.mousePressed(clearLanding);
+    toggleBtn.mousePressed(fullscreen);
+
+
+    fft = new p5.FFT();
+
+    pieces = 32;
+    radius = windowHeight / 4;
+
+
 
 
 }
@@ -174,10 +178,20 @@ function draw() {
 function toggleAudio() {
     if (audio.isPlaying()) {
         audio.pause();
+
     } else {
         audio.play();
     }
 }
+
+function clearLanding() {
+  if (audio.isPlaying()) {
+    txtNotes.remove();
+    hcCov.remove();
+    toggleBtn.hide();
+  }
+}
+
 
 
 function fullScren() {

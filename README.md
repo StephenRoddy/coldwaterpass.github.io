@@ -14,7 +14,7 @@ The visualisation is a work in progress and will be continually developed over t
 
 The sonification and most recent visualisation can be played in the browser here: 
 
-[Current state of Visualisation/Sonification](https://stephenroddy.github.io/index2.html)
+[Current state of Visualisation/Sonification](https://stephenroddy.github.io/index.html)
 
 
 Further sonifications are available on "The Human Cost", an elecotronc album consisting of sonifications and musifications of the Irish financial crash :
