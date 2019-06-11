@@ -193,8 +193,9 @@ canvas {
 
 			position: absolute;
 			overflow: hidden;
-			width: 35em;
-			height: 35em;
+			width: 15em;
+			height: 15em;
+			top: 10px;
 	}
 
 	.txt-note {
