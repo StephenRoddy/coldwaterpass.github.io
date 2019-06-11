@@ -189,11 +189,9 @@ canvas {
 
 
 	.hc-img {
-			overflow: hidden;
-			width: calc(100% - 20px);
-			top: 5vh;
-			left: 5vw;
-
+			right: 10px;
+			top: 10px;
+			height: calc(100% - 20px);
 	}
 
 	.txt-note {
