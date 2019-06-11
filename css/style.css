@@ -178,11 +178,19 @@ canvas {
 		width: calc(100% - 20px);
 	}
 
+	.lds-hourglass {
+		width: 15vmax;
+	  height: 15vmax;
+	  position: absolute;
+		left: 40%;
+		top: 40%;
+	}
+
+
 	.hc-img {
 		  visibility: hidden;
 	}
 
 	.txt-note {
 		 visibility: hidden;
-
 }
