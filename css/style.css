@@ -191,6 +191,7 @@ canvas {
 	.hc-img {
 			overflow: hidden;
 			width: 75%;
+			height:75%;
 			top: 10px;
 			left: 10px;
 
