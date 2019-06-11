@@ -193,7 +193,8 @@ canvas {
 
 			position: absolute;
 			overflow: hidden;
-			width: calc(100% - 40px);
+			width: 75%;
+			height: auto;
 			top: 10px;
 			left: 10px;
 
