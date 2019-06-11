@@ -146,6 +146,7 @@ canvas {
 	float: right;
 	margin: 10vmax;
   top: 2.5vmax;
+	left: 2.5vmax;
 
 }
 
@@ -165,6 +166,7 @@ canvas {
 	border: 1px solid;
 	left: 30vmax;
   top: 50vmax;
+	bottom: 5vmax; 
 
 }
 
@@ -189,8 +191,18 @@ canvas {
 
 	.hc-img {
 		  visibility: hidden;
+			position: absolute;
+			overflow: hidden;
+			width: 0;
+			height: 0;
+			pointer-events: none;
 	}
 
 	.txt-note {
 		 visibility: hidden;
+		 position: absolute;
+		 overflow: hidden;
+		 width: 0;
+		 height: 0;
+		 pointer-events: none;
 }
