@@ -174,19 +174,15 @@ canvas {
 
 	.toggle-btn {
 		right: 10px;
-		bottom: 5vmax;
+		bottom: 10px;
 		width: calc(100% - 20px);
 	}
 
 	.hc-img {
-		right: 10px;
-		bottom: 30vmax;
-		width: calc(100% - 20px);
+		  visibility: hidden;
 	}
 
 	.txt-note {
-		right: 5px;
-		bottom: 90vmax;
-		width: calc(100% - 20px);
+		 visibility: hidden;
 
 }
