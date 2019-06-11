@@ -190,7 +190,7 @@ canvas {
 
 	.hc-img {
 		margin: 30px;
-		width: 60vw;
+		width: 100%;
 		position: absolute;
 		border: 1px solid;
 
