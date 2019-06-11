@@ -190,7 +190,7 @@ canvas {
 
 	.hc-img {
 			overflow: hidden;
-			width: 75vmax;
+			width: calc(100% - 20px);
 			top: 5vh;
 			left: 5vw;
 
