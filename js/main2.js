@@ -6,82 +6,30 @@ var uploadLoading = false;
 
 function preload() {
     audio = loadSound("audio/ColdwaterPass.mp3");
-    //  img = loadImage("lib/HumanCost.jpg");
+    hcCover = loadImage("lib/img.gif");
 
 }
 
-/*
-function uploaded(file) {
-    uploadLoading = true;
-    uploadedAudio = loadSound(file.data, uploadedAudioPlay);
-}
-
-function uploadedAudioPlay(audioFile) {
-
-    uploadLoading = false;
-
-    if (audio.isPlaying()) {
-        audio.pause();
-    }
-
-    audio = audioFile;
-    audio.loop();
-}
-*/
 function setup() {
-
-   // uploadAnim = select('#uploading-animation');
 
     createCanvas(windowWidth, windowHeight);
     toggleBtn = createButton("Begin");
     toggleBtn.addClass("toggle-btn");
-    
+
     toggleBtn.mousePressed(toggleAudio);
     toggleBtn.mousePressed(toggleBtn.hide);
     toggleBtn.mousePressed(fullscreen);
-   // image(img, 10, 10, 50, 50);
-
-
-// initialise background
-    background(colorPalette[1]); //Drop Image in here
-
-
-  //  image(img, 0, 0); //album cover
 
     fft = new p5.FFT();
-    
-    //peakDetect = new p5.PeakDetect();   // Not using yet but need to 
-    
 
-   // audio.play();
-
- 
     pieces = 32;
     radius = windowHeight / 4;
 
-    varianceX = 3;  
-    varianceY = .45; 
-
-//	peakDetect.onPeak(varyX);
-//    peakDetect.onPeak(varyY);
-
-
+    image(hcCover, 0, 0);
 
 }
 
 function draw() {
-
-/*
-    // Add a loading animation for the uploaded track
-    if (uploadLoading) {
-        uploadAnim.addClass('is-visible');
-    } else {
-        uploadAnim.removeClass('is-visible');
-    }
-
-    */
-
-
 
     fft.analyze();
 
@@ -109,12 +57,7 @@ function draw() {
     var modColor = map(treble, 0, 255, 0, width);
 
 
-
-   // peakDetect.update(fft);
-  //  if ( peakDetect.isDetected ) {}
-   	    //peakDetect.onPeak(someFunction);
-
-    pieces = pieceMid;//mapMouseX;  // Float running fro 2 on the far l3ft to 0 on the far riht
+    pieces = pieceMid;
     radius = radBass;  //rougly 75 - 120
 
     translate(width / 2, height / 2);
@@ -131,8 +74,39 @@ function draw() {
  	fill (148, 109, 191);
 
 
-    for (i = 0; i < pieces; i += 0.01) {
+//Create Boxes in Boxes
 
+//box1
+  rectMode(CENTER);
+  strokeWeight(4);
+  noFill();
+  stroke(0,(255*modTreb));
+  rotate(TWO_PI*modTreb);
+  rect(0,0,750,750);
+
+//box2
+  rectMode(CENTER);
+  strokeWeight(4);
+  noFill();
+  stroke(0,(255*modMid));
+  rotate(TWO_PI*modMid);
+  rect(0,0,450,450);
+
+//box3
+  rectMode(CENTER);
+  strokeWeight(4);
+  noFill();
+  stroke(0,(255*modBass));
+  rotate(TWO_PI*modBass);
+  rect(0,0,250,250);
+
+
+  //fill (0,(150*modTreb)); // Display max at half opacity- mapped to treble
+  //rect(0,0,650,650);
+
+
+// Draw out the crcular line shapes
+    for (i = 0; i < pieces; i += 0.01) {
         rotate(TWO_PI / pieces);
 
         /*----------  BASS 1 ----------*/
@@ -209,5 +183,3 @@ function fullScren() {
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
-
-
