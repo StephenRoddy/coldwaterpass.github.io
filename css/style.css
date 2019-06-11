@@ -192,6 +192,8 @@ canvas {
 		left: 10px;
 		top: 10px;
 		width: calc(100% - 60px);
+		height:calc(100vw - 60px);
+
 }
 
 	.txt-note {
