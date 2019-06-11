@@ -175,8 +175,8 @@ canvas {
 
 
 	.toggle-btn {
-		right: 5vw;
-		bottom: 5vh;
+		right: 10px;
+		bottom: 10px;
 		width: calc(100% - 20px);
 	}
 
