@@ -183,16 +183,12 @@ canvas {
 	.lds-hourglass {
 		width: 15vmax;
 	  height: 15vmax;
-	  position: absolute;
 		left: 45%;
 		top: 40%;
 	}
 
 
 	.hc-img {
-
-			position: absolute;
-			overflow: hidden;
 			width: 75%;
 			top: 10px;
 			left: 10px;
