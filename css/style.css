@@ -191,7 +191,9 @@ canvas {
 	.hc-img {
 			right: 10px;
 			top: 10px;
-			width: 40vw;
+			width: 60vw;
+			position: absolute;
+			border: 1px solid;
 	}
 
 	.txt-note {
