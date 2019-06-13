@@ -107,7 +107,7 @@ canvas {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: currentColor;
-	position: absolute;
+	position: fixed;
 	bottom: 2vmax;
 	border: 1px solid;
 	width: 255px;
@@ -133,7 +133,7 @@ canvas {
 	text-align: center;
 	letter-spacing: 0.1em;
 	color: currentColor;
-	position: absolute;
+	position: fixed;
 	text-align:left;
 	border: 1px solid;
 	width: 75vmax;
@@ -162,7 +162,7 @@ canvas {
 	width: 35vmax;
 	height: 35vmax;
 	float:left;
-	position: absolute;
+	position: fixed;
 	border: 1px solid;
 	left: 30vmax;
   top: 50vmax;
